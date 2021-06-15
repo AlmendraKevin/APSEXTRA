@@ -27,6 +27,26 @@ label.logo{
 	font-weight: bold;
 }
 
+.logolink{
+	color: #FFFFFF;
+}
+
+.imagenes{
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+.imgbox{
+	font-size: 16px;
+	background: #fff;
+	border-radius: 50px;
+	box-shadow: 5px, 5px, 10px black;
+	width: 350px;
+	outline: none;
+}
+
 nav ul{
 	float: right;
 	margin-right: 20px;

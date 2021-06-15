@@ -9,10 +9,11 @@
 </head>
 <body>
 	<nav>
-		<label class="logo">La Popular</label>
-		<img class="logo1" src="/img/logo.jpg">
+		<label class="logo"><a class="logolink" href="/">La Popular</a></label>
+		<a href="/"><img class="logo1" src="/img/logo.jpg"></a>
 		<ul>
 			<li><a th:href="@{/admin/new}" class="active" href="#">Registrar</a></li>
+			<li><a href="#">Consultar</a></li>
 			<li><a href="#">Modificar</a></li>
 			<li><a href="#">Eliminar</a></li>
 			<li><form th:action="@{/logout}" method="post"> <input type="submit" value="Cerrar Sesion"/></form></li>
@@ -59,6 +60,9 @@
 					<div class="underline"></div>
 					<label>Costo</label>
 				</div>
+			</div>
+			<div class="imagenes">
+				<input type="file" class="imgbox" name="img" accept=".png,.jpg,.jpeg">
 			</div>
 				<div class="form-row submit-btn">
 					<div class="input-data">
