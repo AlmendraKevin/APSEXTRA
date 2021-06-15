@@ -1,0 +1,249 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	outline: none;
+	box-sizing: border-box;
+	font-family: verdana;
+}
+
+body{
+	min-height: 100vh;
+	background: linear-gradient(115deg, #fee893 10%, #bd9ab2 90%)
+}
+
+nav{
+	background: #c4c0bb;
+	height: 80px;
+	width: 100%;
+}
+
+label.logo{
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 220px;
+	font-weight: bold;
+}
+
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+nav ul li a{
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+.logo1{
+	position: absolute;
+	height: 60px;
+	width: 90px;
+	top: 10px;
+	left: 100px;
+}
+
+a.active, a:hover{
+	background: #bcd1d4;
+	transition: .5s;
+}
+
+@media (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+
+.contenedor{
+	background: rgba(var(--b3f,250,250,250),1);
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 40px;
+	bottom: 0;
+	margin: auto;
+	width: 100%;
+	max-width: 1400px;
+	height: 70%;
+	max-height: 600px;
+	min-height: 600px;
+	padding: 25px 40px 10px 40px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.contenedor .text{
+	font-size: 35px;
+	font-weight: 600;
+	text-align: center;
+	background: linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+}
+
+.contenedor form{
+	padding: 30px 0 0 0 0;
+}
+
+.contenedor form .form-row{
+	display: flex;
+	margin: 32px 0;
+}
+
+form .form-row .input-data{
+	width: 100%;
+	height: 40px;
+	margin: 0 20px;
+	position: relative;
+}
+
+form .form-row .textarea{
+	height: 70px;
+}
+
+.input-data input{
+	display: block;
+	height: 100%;
+	width: 100%;
+	border: none;
+	font-size: 17px;
+	border-bottom: 2px solid rgba(0,0,0,0.12);
+}
+
+.input-data input:focus ~ label,
+.input-data input:valid ~ label{
+	transform: translateY(-20px);
+	color: #3498db;
+	font-size: 14px;
+}
+
+.input-data label{
+	position: absolute;
+	bottom: 10px;
+	font-size: 16px;
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+
+.input-data .underline{
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	width: 100%;
+}
+
+.input-data .underline:before,
+.input-data .underline:after{
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	background: #3498db;
+	transform: scaleX(0);
+	transform-origin: center;
+	transition: transform 0.3s ease;
+}
+
+.input-data input:focus ~ .underline:before, .underline:after,
+.input-data input:valid ~ .underline:before, .underline:after{
+	transform: scaleX(1);
+}
+
+.submit-btn .input-data{
+	height: 45px!important;
+	width: 25%!important;
+	overflow: hidden;
+}
+
+.submit-btn .input-data .inner{
+	height: 100%;
+	width: 300%;
+	position: absolute;
+	left: -100%;
+	transition: all 0.3s;
+	background: #158c53;
+}
+
+.submit-btn .input-data:hover .inner{
+	background: #11613b;
+}
+
+.submit-btn .input-data input{
+	position: relative;
+	z-index: 2;
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.cancel-btn .input-data{
+	height: 45px!important;
+	width: 330px!important;
+	overflow: hidden;
+	left: 950px;
+	top: -75px;
+}
+
+.cancel-btn .input-data .inner{
+	height: 100%;
+	width: 300%;
+	position: absolute;
+	left: -100%;
+	transition: all 0.3s;
+	background: #9c1717;
+}
+
+.cancel-btn .input-data:hover .inner{
+	background: #5e0f0f;
+}
+
+.cancel-btn .input-data input{
+	position: relative;
+	z-index: 2;
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+@media (max-width: 700px){
+	.contenedor .text{
+		font-size: 30px;
+	}
+	.contenedor form{
+		padding: 10px 0 0 0 0;
+	}
+	.contenedor form .form-row{
+		display: block;
+	}
+	form .form-row .input-data{
+		margin: 35px 0!important;
+	}
+	submit-btn .input-data{
+		width: 40%!important;
+	}
+	cancel-btn .input-data{
+		width: 40%!important;
+	}
+}
