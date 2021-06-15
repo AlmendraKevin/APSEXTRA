@@ -1,0 +1,142 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	outline: none;
+	box-sizing: border-box;
+	font-family: verdana;
+}
+
+body{
+	min-height: 100vh;
+	background: linear-gradient(115deg, #fee893 10%, #bd9ab2 90%)
+}
+
+nav{
+	height: 80px;
+	width: 100%;
+}
+
+label.logo{
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 220px;
+	font-weight: bold;
+}
+
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+nav ul li a{
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	position: relative;
+	right: 100px;
+}
+
+.logo1{
+	position: absolute;
+	height: 60px;
+	width: 90px;
+	top: 10px;
+	left: 100px;
+}
+
+a.active, a:hover{
+	background: #bcd1d4;
+	transition: .5s;
+}
+
+.contenedor{
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 40px;
+	bottom: 0;
+	margin: auto;
+	width: 100%;
+	max-width: 1400px;
+	height: 70%;
+	max-height: 600px;
+	min-height: 600px;
+	padding: 25px 40px 10px 40px;
+}
+
+.ventas-btn{
+	position: absolute;
+	top: 50px;
+	left: 80px;
+	display: block;
+	border: 0;
+	font-size: 72px;
+	line-height: 1;
+	padding: 95px 225px;
+	border-radius: 5px;
+	background: rgba(var(--b3f,250,250,250),1);
+	color: #000000;
+	cursor: pointer;
+	transition: all 0.3s linear;
+	font-weight: bold;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.ventas-btn:hover{
+	background: #B5B5B5;
+}
+
+.reportes-btn{
+	position: absolute;
+	top: 50px;
+	left: 830px;
+	display: block;
+	border: 0;
+	font-size: 72px;
+	line-height: 1;
+	padding: 95px 49px;
+	border-radius: 5px;
+	background: rgba(var(--b3f,250,250,250),1);
+	color: #000000;
+	cursor: pointer;
+	transition: all 0.3s linear;
+	font-weight: bold;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.reportes-btn:hover{
+	background: #B5B5B5;
+}
+
+.catalogo-btn{
+	position: absolute;
+	top: 330px;
+	left: 80px;
+	display: block;
+	border: 0;
+	font-size: 72px;
+	line-height: 1;
+	padding: 90px 428px;
+	border-radius: 5px;
+	background: rgba(var(--b3f,250,250,250),1);
+	color: #000000;
+	cursor: pointer;
+	transition: all 0.3s linear;
+	font-weight: bold;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.catalogo-btn:hover{
+	background: #B5B5B5;
+}
