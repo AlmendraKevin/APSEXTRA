@@ -20,7 +20,7 @@ public class Zapato {
     @Column(name = "talla_zapato")
     private String tallaZapato;
 
-    @Column(name = "exitencia_zapato")
+    @Column(name = "existencia_zapato")
     private String existenciaZapato;
 
     @Column(name = "costo_zapato")

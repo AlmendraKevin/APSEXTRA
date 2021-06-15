@@ -1,0 +1,54 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>La Popular</title>
+    <link rel="stylesheet" href="/css/stylegerente.css">
+    <link rel="shortcut icon" type="image/png" href="/img/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<nav>
+    <label class="logo"><a class="logolink" href="/">La Popular</a></label>
+    <a href="/"><img class="logo1" src="/img/logo.jpg"></a>
+    <ul>
+        <li><a th:href="@{/admin/new}" href="#">Registrar</a></li>
+        <li><a th:href="@{/admin}" class="active" href="#">Consultar</a></li>
+        <li><a href="#">Modificar</a></li>
+        <li><a href="#">Eliminar</a></li>
+        <li><form th:action="@{/logout}" method="post"> <input type="submit" value="Cerrar Sesion"/></form></li>
+    </ul>
+</nav>
+<div class="contenedor">
+    <div class="text">Consulta de calzado</div>
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Modelo</th>
+            <th>Color</th>
+            <th>Talla</th>
+            <th>Existencia</th>
+            <th>Costo</th>
+            <th>Ubicacion</th>
+            <th>Vista Previa</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="s :${shoe}">
+            <td th:text="${s.idZapato}"></td>
+            <td th:text="${s.modeloZapato}"></td>
+            <td th:text="${s.colorZapato}"></td>
+            <td th:text="${s.tallaZapato}"></td>
+            <td th:text="${s.existenciaZapato}"></td>
+            <td th:text="${s.costoZapato}"></td>
+            <td th:text="${s.ubicacionZapato}"></td>
+            <td>
+               <img th:src="${'data:image/png;base64' + s.str}" style="width: 100%;max-width: 80px"/>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -13,9 +13,9 @@
 		<a href="/"><img class="logo1" src="/img/logo.jpg"></a>
 		<ul>
 			<li><a th:href="@{/admin/new}" class="active" href="#">Registrar</a></li>
-			<li><a href="#">Consultar</a></li>
+			<li><a th:href="@{/admin}" href="#">Consultar</a></li>
 			<li><a href="#">Modificar</a></li>
-			<li><a href="#">Eliminar</a></li>
+			<li><a th:href="@{/logout}" href="#">Eliminar</a></li>
 			<li><form th:action="@{/logout}" method="post"> <input type="submit" value="Cerrar Sesion"/></form></li>
 		</ul>
 	</nav>
