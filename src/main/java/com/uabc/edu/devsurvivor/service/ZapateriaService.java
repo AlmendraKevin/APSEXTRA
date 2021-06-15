@@ -27,7 +27,7 @@ public class ZapateriaService {
     }
 
     public Zapato saveShoe(Zapato z) {
-        if (z.getIdZapato() == 0L) {
+        if (z.getIdZapato() == null) {
             z = repository.save(z);
             return z;
         } else {

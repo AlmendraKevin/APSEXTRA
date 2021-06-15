@@ -9,7 +9,7 @@ public class Zapato {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long idZapato;
+    private Long idZapato;
 
     @Column(name = "modelo_zapato")
     private String modeloZapato;
@@ -35,11 +35,11 @@ public class Zapato {
     @Column(name = "str")
     private String str;
 
-    public long getIdZapato() {
+    public Long getIdZapato() {
         return idZapato;
     }
 
-    public void setIdZapato(long idZapato) {
+    public void setIdZapato(Long idZapato) {
         this.idZapato = idZapato;
     }
 

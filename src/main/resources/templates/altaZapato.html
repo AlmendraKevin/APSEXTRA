@@ -24,7 +24,7 @@
 		<form action="#" th:action="@{/admin/save}" th:object="${zapato}" method="post" enctype="multipart/form-data">
 			<div class="form-row">
 				<div>
-					<input th:field="*{idZapato}" type="hidden"/>
+					<input th:field="*{idZapato}" id="id" type="hidden"/>
 				</div>
 				<div class="input-data">
 					<input th:field="*{modeloZapato}" type="text" required>

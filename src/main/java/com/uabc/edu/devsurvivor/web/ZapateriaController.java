@@ -55,6 +55,7 @@ public class ZapateriaController {
                                    @RequestParam(value = "ubicacionZapato",required = true )String ubicacion,
                                    @RequestParam(value = "img",required = false )MultipartFile img){
         Zapato entity;
+
         if (id.isPresent()){
             entity = service.getShoesById(id.get());
         }else{

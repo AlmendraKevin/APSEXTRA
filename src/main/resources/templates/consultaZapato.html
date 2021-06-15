@@ -12,7 +12,11 @@
     <label class="logo"><a class="logolink" href="/">La Popular</a></label>
     <a href="/"><img class="logo1" src="/img/logo.jpg"></a>
     <ul>
-        <li><a href="/">Regresar</a></li>
+        <li><a th:href="@{/admin/new}" href="#">Registrar</a></li>
+        <li><a th:href="@{/admin}" class="active" href="#">Consultar</a></li>
+        <li><a href="#">Modificar</a></li>
+        <li><a href="#">Eliminar</a></li>
+        <li><form th:action="@{/logout}" method="post"> <input type="submit" value="Cerrar Sesion"/></form></li>
     </ul>
 </nav>
 <div class="contenedor">
@@ -40,7 +44,7 @@
             <td th:text="${s.costoZapato}"></td>
             <td th:text="${s.ubicacionZapato}"></td>
             <td>
-               <img th:src="${'data:image/png;base64,' + s.str}" style="width: 100%;max-width: 80px"/>
+                <img th:src="${'data:image/png;base64,' + s.str}" style="width: 100%;max-width: 80px"/>
             </td>
         </tr>
         </tbody>
