@@ -12,10 +12,10 @@
 		<label class="logo">La Popular</label>
 		<img class="logo1" src="/img/logo.jpg">
 		<ul>
-			<li><a class="active" href="/admin/new">Registrar</a></li>
+			<li><a th:href="@{/admin/new}" class="active" href="#">Registrar</a></li>
 			<li><a href="#">Modificar</a></li>
 			<li><a href="#">Eliminar</a></li>
-			<li><a href="/logout">Cerrar sesion</a></li>
+			<li><form th:action="@{/logout}" method="post"> <input type="submit" value="Cerrar Sesion"/></form></li>
 		</ul>
 	</nav>
 	<div class="contenedor">
