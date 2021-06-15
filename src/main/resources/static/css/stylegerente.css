@@ -66,6 +66,23 @@ nav ul li a{
 	text-transform: uppercase;
 }
 
+.logout{
+	font-size: 17px;
+	color: #FFFFFF;
+	background: none;
+	border-radius: 3px;
+	border: none;
+	padding: 7px 13px;
+	width: 175px;
+	outline: none;
+	cursor: pointer;
+}
+
+.logout:hover{
+	background: #bcd1d4;
+	transition: .5s;
+}
+
 .logo1{
 	position: absolute;
 	height: 60px;
