@@ -48,12 +48,12 @@
                 <img th:src="${'data:image/png;base64,' + s.str}" style="width: 100%;max-width: 80px"/>
             </td>
             <td>
-                <a th:href="@{/admin/update/{id}(id=${s.idZapato})}" class="submit-btn">
+                <a th:href="@{/admin/update/{id}(id=${s.idZapato})}" class="edit-btn">
                     Editar
                 </a>
             </td>
             <td>
-                <a th:href="@{/admin/delete/{id}(id=${s.idZapato})}" class="submit-btn">
+                <a th:href="@{/admin/delete/{id}(id=${s.idZapato})}" class="delete-btn">
                     Eliminar
                 </a>
             </td>
