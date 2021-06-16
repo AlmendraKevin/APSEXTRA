@@ -14,9 +14,7 @@
 		<a href="/"><img class="logo1" src="/img/logo.jpg"></a>
 		<ul>
 			<li><a th:href="@{/admin/new}" class="active" href="#">Registrar</a></li>
-			<li><a href="#">Consultar</a></li>
-			<li><a href="#">Modificar</a></li>
-			<li><a href="#">Eliminar</a></li>
+			<li><a href="/admin">Consultar</a></li>
 			<li><form th:action="@{/logout}" method="post"> <input class="logout" type="submit" value="CERRAR SESION"/></form></li>
 		</ul>
 	</nav>
@@ -84,7 +82,9 @@
 			<div class="form-row cancel-btn">
 					<div class="input-data">
 						<div class="inner"></div>
+						<a href="/admin">
 						<input type="button" value="Cancelar">
+						</a>
 				</div>
 			</div>
 		</form>
