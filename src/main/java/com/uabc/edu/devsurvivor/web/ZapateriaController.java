@@ -35,8 +35,8 @@ public class ZapateriaController {
     @RequestMapping(path = {"/update/{id}"})
     public String editUpdateShoeById(Model model, @PathVariable(value = "id",required = true) Long id){
         Zapato zapato = service.getShoesById(id);
-        model.addAttribute("shoe",zapato);
-        return "modificar";
+        model.addAttribute("zapato",zapato);
+        return "altaZapato";
     }
 
     @GetMapping("/delete/{id}")
