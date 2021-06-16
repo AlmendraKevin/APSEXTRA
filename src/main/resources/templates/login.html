@@ -1,0 +1,36 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+<div class="center">
+	<h1>Iniciar sesión</h1>
+	<form th:action="@{/login}" method="post">
+		<div class="txt_field">
+			<input type="text" name="username" required>
+			<span></span>
+			<label>Usuario</label>
+		</div>
+		<div class="txt_field">
+			<input type="password" name="password" required>
+			<span></span>
+			<label>Contraseña</label>
+		</div>
+		<input type="submit" value="Iniciar Sesión">
+		<a href="/">
+		<input type="button" value="Regresar">
+		</a>
+		<div th:if="${param.error}">
+			Usuario o cantraseña no validos
+		</div>
+		<div th:if="${param.logout}">
+			Usted se ha desconectado
+		</div>
+	</form>
+</div>
+</body>
+</html>
