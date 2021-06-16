@@ -54,3 +54,23 @@
 .content-table tbody tr:last-of-type {
     border-bottom: 2px solid #fee893;
 }
+
+.edit-btn{
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.edit-btn:hover{
+    background: #fee893;
+}
+
+.delete-btn{
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.delete-btn:hover{
+    background: #fee893;
+}
