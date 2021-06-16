@@ -23,7 +23,7 @@ public class ZapateriaController {
     public String getShoes(Model model){
         List<Zapato> shoe = service.getShoes();
         model.addAttribute("shoe",shoe);
-        return "catalogo";
+        return "consultaZapato";
     }
 
     @RequestMapping("/new")

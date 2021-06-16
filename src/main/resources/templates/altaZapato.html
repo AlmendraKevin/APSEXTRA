@@ -27,36 +27,48 @@
 					<input th:field="*{idZapato}" id="id" type="hidden"/>
 				</div>
 				<div class="input-data">
-					<input th:field="*{modeloZapato}" type="text" required>
-					<div class="underline"></div>
 					<label>Modelo</label>
+					<select th:field="*{modeloZapato}" name="modeloZapato" required>
+						<option value="" disabled selected>Elige una opcion</option>
+						<option value="Caballero">Caballero</option>
+						<option value="Dama">Dama</option>
+						<option value="Unisex">Unisex</option>
+					</select>
+					<div class=""></div>
+
 				</div>
 				<div class="input-data">
-					<input th:field="*{colorZapato}" type="text" required>
+					<input th:field="*{colorZapato}" type="text" name="colorZapato" required>
 					<div class="underline"></div>
 					<label>Color</label>
 				</div>
 			</div>
 				<div class="form-row">
 					<div class="input-data">
-						<input th:field="*{tallaZapato}" type="text" required>
+						<input th:field="*{tallaZapato}" type="number" required>
 						<div class="underline"></div>
 						<label>Talla</label>
 					</div>
 				<div class="input-data">
-					<input th:field="*{existenciaZapato}" type="text" required>
+					<input th:field="*{existenciaZapato}" type="number" required>
 					<div class="underline"></div>
 					<label>Existencia</label>
 				</div>
 			</div>
 				<div class="form-row">
 					<div class="input-data">
-						<input th:field="*{ubicacionZapato}" type="text" required>
-						<div class="underline"></div>
 						<label>Ubicacion</label>
+						<select th:field="*{ubicacionZapato}" name="ubicacionZapato" required>
+							<option value="" disabled selected>Elige una opcion</option>
+							<option value="Exhibicion">Exhibicion</option>
+							<option value="Almacen">Almacen</option>
+							<option value="Sin Stock">Sin Stock</option>
+						</select>
+						<div class=""></div>
+
 					</div>
 				<div class="input-data">
-					<input th:field="*{costoZapato}" type="text" required>
+					<input th:field="*{costoZapato}" type="number" required>
 					<div class="underline"></div>
 					<label>Costo</label>
 				</div>
