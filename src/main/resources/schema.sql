@@ -23,6 +23,7 @@ str text);
 
 CREATE TABLE VENTAS(
 id_venta INT AUTO_INCREMENT PRIMARY KEY,
+factura_venta INT NOT NULL ,
 realizo_venta varchar(60),
 concepto_venta varchar(60) NOT NULL,
 total_venta varchar (60) NOT NULL,

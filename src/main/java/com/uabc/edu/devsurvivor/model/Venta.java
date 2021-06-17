@@ -1,7 +1,7 @@
 package com.uabc.edu.devsurvivor.model;
 
 import javax.persistence.*;
-import java.sql.Date;
+import java.util.Date;
 import java.sql.Timestamp;
 
 @Entity
@@ -11,6 +11,9 @@ public class Venta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idVenta;
+
+    @Column(name = "factura_venta")
+    private Integer facturaVenta;
 
     @Column(name = "realizo_venta")
     private String realizoVenta;
@@ -30,6 +33,14 @@ public class Venta {
 
     public void setIdVenta(Long idVenta) {
         this.idVenta = idVenta;
+    }
+
+    public Integer getFacturaVenta() {
+        return facturaVenta;
+    }
+
+    public void setFacturaVenta(Integer facturaVenta) {
+        this.facturaVenta = facturaVenta;
     }
 
     public String getRealizoVenta() {
@@ -68,6 +79,7 @@ public class Venta {
     public String toString() {
         return "Venta{" +
                 "idVenta=" + idVenta +
+                ", facturaVenta=" + facturaVenta +
                 ", realizoVenta='" + realizoVenta + '\'' +
                 ", conceptoVenta='" + conceptoVenta + '\'' +
                 ", totalVents='" + totalVents + '\'' +
